@@ -83,3 +83,6 @@
 	contactForm();
 
 })(jQuery);
+function onclick123(){
+	alert("your order has been placed");
+}
