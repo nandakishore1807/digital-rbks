@@ -1,4 +1,5 @@
-(function($) {
+
+  (function($) {
 
 	"use strict";
 
@@ -84,6 +85,18 @@
 
 })(jQuery);
 function onclick123(){
+	
 	alert("your order has been placed");
+	console.log(Notification.permission);
+	if (Notification.permission!=="denied"){
+		Notification.requestPermission().then(permission=>{
+			console.log(permission);
+		})
+
+	}
 	new window.Notification("hi");
+
+	
+	
+	
 }
