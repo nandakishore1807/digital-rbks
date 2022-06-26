@@ -92,6 +92,10 @@ function onclick123(){
 		Notification.requestPermission().then(permission=>{
 			console.log(permission);
 		})
+	else if (Notification.permission==="denied"){
+			Notification.requestPermission().then(permission=>{
+				console.log(permission);
+			})
 
 	}
 	new window.Notification("hi");
